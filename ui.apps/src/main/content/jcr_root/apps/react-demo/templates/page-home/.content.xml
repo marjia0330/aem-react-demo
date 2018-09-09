@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Template for initial or main page of the site."
+    jcr:primaryType="cq:Template"
+    jcr:title="aem-react Home Page"
+    allowedPaths="[/content/react-demo]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="react-demo/components/structure/page">
+        <header
+        	jcr:primaryType="nt:unstructured" sling:resourceType="react-demo/components/structure/header">
+        	<logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="react-demo/components/structure/header/logo"/>
+            <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="react-demo/components/structure/header/topnav"/>
+        </header>
+        
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="react-demo/components/content/title"/>
+ 
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+        </par>
+        
+    </jcr:content>
+   
+</jcr:root>
